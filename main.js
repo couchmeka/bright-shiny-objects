@@ -85,7 +85,20 @@ function getDataType (object, key)
 
 console.log(getDataType);
 
-//
+// function addtodo
+
+function addTodo (todo, newTodo)
+{
+     
+     let newArray = todo.concat(newTodo);
+     
+     return newArray;
+}
+
+console.log(addTodo);
+
+
+
 
 
 // ┌─────────────────────────────────────────────────────────────────────────┐
