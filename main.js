@@ -2,13 +2,90 @@
 // │ Your code here! │
 // └─────────────────┘
 
+//Function createUser
+function createUser(firstName1, lastName1) 
+{
+  let createUserObject = {  
+  firstName: firstName1,
+  lastName: lastName1,
+  }
+
+   return createUserObject;
+
+}
+
+console.log(createUser())
+
+
+// function setAge
+let user = {
+    firstName:'Tim',
+    lastName:'Horton',
+};
+
+function setAge (user1, age)
+{
+  user1['age'] = age;
+
+  return user1;
+}
+
+console.log(setAge(user))
+
+// function incrementAge
+
+
+function incrementAge(user){
+
+    user.age = user.age + 1;
+
+    return user;
+}
+
+console.log(incrementAge)
+
+// fixCar
+
+ function fixCar(car)
+{
+    car.needsMaintenance = car.needsMaintenance = false;
+    return car
+}
+
+console.log(fixCar)
+
+//addGrades
 
 
 
+function addGrades(student, newGrades)
+{
+    for(let i = 0; i < newGrades.length; i++)
+    {
+
+        student.grades.push(newGrades[i]);
+    }
+    return student
+}
+
+console.log(addGrades);
 
 
+// function GetDataType
 
+function getDataType (object, key)
+{
+    let keytype = key
+    for(let i = 0; i < keytype.length; i++)
+    {
+      keyType = typeof object[key];
+    }
+    return keyType;
+}
 
+console.log(getDataType);
+
+//
 
 
 // ┌─────────────────────────────────────────────────────────────────────────┐
