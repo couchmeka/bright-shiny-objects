@@ -75,11 +75,11 @@ console.log(addGrades);
 
 function getDataType (object, key)
 {
-    let keytype = key
-    for(let i = 0; i < keytype.length; i++)
-    {
+    
+    //for(let i = 0; i < keytype.length; i++)
+    //{
       keyType = typeof object[key];
-    }
+   //}
     return keyType;
 }
 
@@ -96,6 +96,29 @@ function addTodo (todo, newTodo)
 }
 
 console.log(addTodo);
+
+
+//function addSong
+
+function addSong(playlist, newSongs)
+{  
+    
+     songs = playlist.songs.push(newSongs);
+     playlist['duration'] = (playlist['duration']+= newSongs['duration']);
+    
+
+    return playlist;
+
+}
+
+console.log(addSong);
+
+
+//update report card 
+
+function updateReportCard (reportCard, grades){
+    reportCard['grades'] = grades;
+}
 
 
 
